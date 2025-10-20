@@ -50,7 +50,7 @@ file7.close();
 file8.close();
 file9.close(); */
 
-const tx1 = "";
+/*const tx1 = "";
 const tx2 = "";
 const tx3 = "";
 const tx4 = "";
@@ -115,7 +115,18 @@ txB.readFile('textB.txt','utf8',(err,data) => {
         return;
     }
     console.log(data);
+});*/
+const tx1 = require('tx1');
+tx1.readFile('../main/text1.txt', 'utf8', (err, data) => { 
+  if (err) { 
+    console.error('Error reading file:', err); 
+    return; 
+  } 
+ 
+  const content = data; 
+  console.log(content);  
 });
+
 
 // Run 'Before Experiment' code from code_6
 //let rd = 0;
@@ -2929,6 +2940,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
