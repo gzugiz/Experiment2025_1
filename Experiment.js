@@ -105,7 +105,7 @@ file3.close();
 // Run 'Before Experiment' code from code_3
 let r = util.randint(1, 10);
 //let s = 0;
-//let a = 0;
+let a = 0;
 
 // init psychoJS:
 const psychoJS = new PsychoJS({
@@ -2194,8 +2194,8 @@ function FollowingRoutineEnd(snapshot) {
 }
 
 
-var r;
-var a;
+//var r;
+//var a;
 var PASATComponents;
 function PASATRoutineBegin(snapshot) {
   return async function () {
@@ -2910,6 +2910,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
