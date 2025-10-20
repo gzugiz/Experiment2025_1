@@ -30,7 +30,7 @@ let tx3 = "";
 let tx4 = "";
 let tx5 = "";
 let tx6 = "";
-let s = "0";
+let ss = "0";
 let ln = "";
 while (true) {
     ln = file.read(1);
@@ -38,57 +38,57 @@ while (true) {
         tx1 = (tx1 + ln);
         continue;
     } else {
-        s = "1";
+        ss = "1";
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "1") && (ln !== "#"))) {
+    if (((ss === "1") && (ln !== "#"))) {
         tx2 = (tx2 + ln);
         continue;
     } else {
-        s = "2";
+        ss = "2";
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "2") && (ln !== "#"))) {
+    if (((ss === "2") && (ln !== "#"))) {
         tx3 = (tx3 + ln);
         continue;
     } else {
-        s = "3";
+        ss = "3";
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "3") && (ln !== "#"))) {
+    if (((ss === "3") && (ln !== "#"))) {
         tx4 = (tx4 + ln);
         continue;
     } else {
-        s = "4";
+        ss = "4";
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "4") && (ln !== "#"))) {
+    if (((ss === "4") && (ln !== "#"))) {
         tx5 = (tx5 + ln);
         continue;
     } else {
-        s = "5";
+        ss = "5";
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "5") && (ln !== "#"))) {
+    if (((ss === "5") && (ln !== "#"))) {
         tx6 = (tx6 + ln);
         continue;
     } else {
-        s = "6";
+        ss = "6";
         break;
     }
 }
@@ -2910,6 +2910,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
