@@ -16,14 +16,14 @@ const t = 0.5;
 const file = open("text.txt", "r");
 const file2 = open("textA.txt", "r");
 const file3 = open("textB.txt", "r");
-let tx1;
-let tx2;
-let tx3;
-let tx4;
-let tx5;
-let tx6;
+let tx1 = "";
+let tx2 = "";
+let tx3 = "";
+let tx4 = "";
+let tx5 = "";
+let tx6 = "";
 let s = "0";
-let ln;
+let ln = "";
 while (true) {
     ln = file.read(1);
     if ((ln !== "#")) {
@@ -91,13 +91,13 @@ file2.close();
 file3.close();
 
 // Run 'Before Experiment' code from code_6
-let rd;
-let x;
+let rd = 0;
+let x = 0;
 
 // Run 'Before Experiment' code from code_3
 let r = util.randint(1, 10);
-let s;
-let a;
+let s = 0;
+let a = 0;
 
 // init psychoJS:
 const psychoJS = new PsychoJS({
@@ -2923,6 +2923,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
