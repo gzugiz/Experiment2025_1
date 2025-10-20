@@ -22,111 +22,35 @@ let expInfo = {
 const n = 32;
 //const t = 0.5;
 //file = open("text.txt", "r");
-/*let file2 = open("textA.txt", "r");
-let file3 = open("textB.txt", "r");
-let file4 = open("text1.txt","r");
-let file5 = open("text2.txt","r");
-let file6 = open("text3.txt","r");
-let file7 = open("text4.txt","r");
-let file8 = open("text5.txt","r");
-let file9 = open("text6.txt","r");
-let tx1 = "";
-file4.readFile();
-let tx2 = file5.readFile();
-let tx3 = file6.readFile();
-let tx4 = file7.readFile();
-let tx5 = file8.readFile();
-let tx6 = file9.readFile();
 
-let txA = file2.readFile();
-let txB = file3.readFile();
-//file.close();
-file2.close();
-file3.close();
-file4.close();
-file5.close();
-file6.close();
-file7.close();
-file8.close();
-file9.close(); */
+tx1 = "Nagyon nagy szeretettel köszöntünk kísérletünkben!
+A felmérés alapvetően 20 és 70 év közötti személyeknek szól, akik nem rendelkeznek semmilyen figyelemzavarra vonatkozó diagnózissal.
+Fontos, hogy kipihenten kezdj neki a kísérletnek!
+A részvétel teljesen önkéntes és anonim. Amennyiben a fenti feltételek teljesülnek rád, és szívesen vennél részt felmérésünkben, a továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+tx2 = "A következőkben egy szöveget kell majd nagyon figyelmesen elolvasnod.
+Koncentrálj minden részletére!
+Elolvasása után egy billentyű megnyomásával tudsz majd továbblépni.
 
-/*const tx1 = "";
-const tx2 = "";
-const tx3 = "";
-const tx4 = "";
-const tx5 = "";
-const tx6 = "";
 
-const txA = "";
-const txB = "";
+A továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+tx3 = "A következőkben különböző szavak, fogalmak fognak felvillanni a képernyőn nagyon rövid időtartammal.  Ha az előző szövegben található vagy a szöveggel kapcsolatos szót, fogalmat észlelsz, nyomd meg a szóköz (space) billentyűt, törekedve a leggyorsabb válaszadásra!
 
-tx1.readFile('text1.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});
-tx2.readFile('text2.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});
-tx3.readFile('text3.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});
-tx4.readFile('text4.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});
-tx5.readFile('text5.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});
-tx6.readFile('text6.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});
-txA.readFile('textA.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});
-txB.readFile('textB.txt','utf8',(err,data) => {
-    if(err){
-        console.error(err);
-        return;
-    }
-    console.log(data);
-});*/
-const tx1 = "";
-tx1.readFile('../main/text1.txt', 'utf8', (err, data) => { 
-  if (err) { 
-    console.error('Error reading file:', err); 
-    return; 
-  } 
- 
-  const content = data; 
-  console.log(content);  
-});
+A továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+tx4 = "A következőkben a képernyőn egyjegyű számok fognak felvillanni egymást követően, kérjük add össze az aktuális értéket a közvetlenül előtte megjelenővel!
+Az eredményt a billentyűzeted segítségével tudod majd begépelni a villogó kurzor által jelzett helyre, majd ezt követően kattints a Tovább gombra!
+Fontos, hogy a lehető leggyorsabban válaszolj!
 
+A kezdéshez nyomj meg egy tetszőleges billentyűt!";
+tx5 = "A következőkben a képernyőn felvillanó négyzetet fogsz látni, a képernyő közepéhez képest időnként feljebb, időnként lejjebb. A feljebb felvillanó négyzetek esetén nyomd le a szóköz (space) billentyűt a lehető leggyorsabban, viszont a lejjebb felvillanók esetén nem szabad semmilyen billentyűt megnyomnod.
+
+A kezdéshez nyomj meg egy tetszőleges billentyűt!";
+tx6 = "A kísérlet véget ért.
+Nagyon szépen köszönjük, hogy részt vettél benne!
+
+Az adatok mentése egy kis időt vesz igénybe.
+Kérjük, ezt még várd meg türelemmel!";
+txA = "Merj nagyot álmodni! Ha elég elszánt vagy, minden lehetséges! Szenvedéllyel minden kihívás játszi könnyedségű élménnyé válik. Minden emberben ott az erő: végtelen energiák lakoznak bennünk. Menni kell előre, a lobogó tűz visz sikerről sikerre. A legjobb vagy! Ezt soha ne feledd! A teremtés koronái lettünk. Tökéletes eredményekre születtünk!";
+txB = "Minden ember életében eljön az a pont, amikor megtapasztalja az élet nehézségeit. Rájövünk, hogy porszemek vagyunk a mindenségben, és végső soron nem számíthatunk senkire. Ilyenkor elgondolkodunk, hogy merre haladunk. Létezik-e elérendő cél? Vajon nem illúzió-e bármi, ami felé megyünk? Mindig a jövőbe kapaszkodunk. De vajon érdemes-e? Elvégre halandók vagyunk, esendők. Az élet bármelyik pillanatban véget érhet. Elenyészünk, elmúlunk. Az idő elröppen, a homokóra lepereg. Az emberiség léptékével mérve rövid létünk során semmit nem érhetünk el.";
 
 // Run 'Before Experiment' code from code_6
 //let rd = 0;
@@ -2940,6 +2864,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
