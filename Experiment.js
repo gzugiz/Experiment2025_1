@@ -99,13 +99,13 @@ file2.close();
 file3.close();
 
 // Run 'Before Experiment' code from code_6
-let rd = 0;
-let x = 0;
+//let rd = 0;
+//let x = 0;
 
 // Run 'Before Experiment' code from code_3
 let r = util.randint(1, 10);
-let s = 0;
-let a = 0;
+//let s = 0;
+//let a = 0;
 
 // init psychoJS:
 const psychoJS = new PsychoJS({
@@ -2910,6 +2910,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
