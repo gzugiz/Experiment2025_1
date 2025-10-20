@@ -116,7 +116,7 @@ txB.readFile('textB.txt','utf8',(err,data) => {
     }
     console.log(data);
 });*/
-const tx1 = require('tx1');
+const tx1 = "";
 tx1.readFile('../main/text1.txt', 'utf8', (err, data) => { 
   if (err) { 
     console.error('Error reading file:', err); 
@@ -2940,6 +2940,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
