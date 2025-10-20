@@ -11,19 +11,19 @@ let expInfo = {
 
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
-var n = 32;
-var t = 0.5;
-var file = open("text.txt", "r");
-var file2 = open("textA.txt", "r");
-var file3 = open("textB.txt", "r");
-var tx1;
-var tx2;
-var tx3;
-var tx4;
-var tx5;
-var tx6;
-var s = "0";
-var ln;
+const n = 32;
+const t = 0.5;
+const file = open("text.txt", "r");
+const file2 = open("textA.txt", "r");
+const file3 = open("textB.txt", "r");
+const tx1;
+const tx2;
+const tx3;
+const tx4;
+const tx5;
+const tx6;
+let s = "0";
+let ln;
 while (true) {
     ln = file.read(1);
     if ((ln !== "#")) {
@@ -84,20 +84,20 @@ while (true) {
         break;
     }
 }
-var txA = file2.read();
-var txB = file3.read();
+const txA = file2.read();
+const txB = file3.read();
 file.close();
 file2.close();
 file3.close();
 
 // Run 'Before Experiment' code from code_6
-var rd;
-var x;
+let rd;
+let x;
 
 // Run 'Before Experiment' code from code_3
-var r = util.randint(1, 10);
-var s;
-var a;
+let r = util.randint(1, 10);
+let s;
+let a;
 
 // init psychoJS:
 const psychoJS = new PsychoJS({
@@ -2923,4 +2923,5 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
