@@ -24,7 +24,7 @@ const n = 32;
 //file = open("text.txt", "r");
 let file2 = open("textA.txt", "r");
 let file3 = open("textB.txt", "r");
-let file4 = open("text1.txt","r");
+file4 = open("text1.txt","r");
 let file5 = open("text2.txt","r");
 let file6 = open("text3.txt","r");
 let file7 = open("text4.txt","r");
@@ -2861,6 +2861,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
