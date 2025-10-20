@@ -31,7 +31,8 @@ let file6 = open("text3.txt","r");
 let file7 = open("text4.txt","r");
 let file8 = open("text5.txt","r");
 let file9 = open("text6.txt","r");
-let tx1 = file4.read();
+let tx1 = "";
+tx1 = file4.read();
 let tx2 = file5.read();
 let tx3 = file6.read();
 let tx4 = file7.read();
@@ -2862,6 +2863,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
