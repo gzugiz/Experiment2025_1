@@ -14,7 +14,7 @@ let expInfo = {
 const n = 32;
 //const t = 0.5;
 //file = open("text.txt", "r");
-let file2 = open("textA.txt", "r");
+/*let file2 = open("textA.txt", "r");
 let file3 = open("textB.txt", "r");
 let file4 = open("text1.txt","r");
 let file5 = open("text2.txt","r");
@@ -22,7 +22,8 @@ let file6 = open("text3.txt","r");
 let file7 = open("text4.txt","r");
 let file8 = open("text5.txt","r");
 let file9 = open("text6.txt","r");
-let tx1 = file4.readFile();
+let tx1 = "";
+file4.readFile();
 let tx2 = file5.readFile();
 let tx3 = file6.readFile();
 let tx4 = file7.readFile();
@@ -39,8 +40,74 @@ file5.close();
 file6.close();
 file7.close();
 file8.close();
-file9.close();
+file9.close(); */
 
+const tx1 = "";
+const tx2 = "";
+const tx3 = "";
+const tx4 = "";
+const tx5 = "";
+const tx6 = "";
+
+const txA = "";
+const txB = "";
+
+tx1.readFile('text1.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+tx2.readFile('text2.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+tx3.readFile('text3.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+tx4.readFile('text4.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+tx5.readFile('text5.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+tx6.readFile('text6.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+txA.readFile('textA.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
+txB.readFile('textB.txt','utf8',(err,data) => {
+    if(err){
+        console.error(err);
+        return;
+    }
+    console.log(data);
+});
 // Run 'Before Experiment' code from code_6
 //let rd = 0;
 //let x = 0;
@@ -2874,6 +2941,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
