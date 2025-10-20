@@ -14,14 +14,14 @@ let expInfo = {
 const n = 32;
 //const t = 0.5;
 //file = open("text.txt", "r");
-file2 = open("textA.txt", "r");
-file3 = open("textB.txt", "r");
-file4 = open("text1.txt","r");
-file5 = open("text2.txt","r");
-file6 = open("text3.txt","r");
-file7 = open("text4.txt","r");
-file8 = open("text5.txt","r");
-file9 = open("text6.txt","r");
+const file2 = open("textA.txt", "r");
+const file3 = open("textB.txt", "r");
+const file4 = open("text1.txt","r");
+const file5 = open("text2.txt","r");
+const file6 = open("text3.txt","r");
+const file7 = open("text4.txt","r");
+const file8 = open("text5.txt","r");
+const file9 = open("text6.txt","r");
 let tx1 = file4.read();
 let tx2 = file5.read();
 let tx3 = file6.read();
@@ -29,8 +29,8 @@ let tx4 = file7.read();
 let tx5 = file8.read();
 let tx6 = file9.read();
 
-txA = file2.read();
-txB = file3.read();
+const txA = file2.read();
+const txB = file3.read();
 //file.close();
 file2.close();
 file3.close();
@@ -2874,6 +2874,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
