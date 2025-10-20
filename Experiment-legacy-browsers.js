@@ -13,82 +13,33 @@ let expInfo = {
 // Run 'Before Experiment' code from init
 const n = 32;
 //const t = 0.5;
-const file = open("text.txt", "r");
-const file2 = open("textA.txt", "r");
-const file3 = open("textB.txt", "r");
-let tx1 = "";
-let tx2 = "";
-let tx3 = "";
-let tx4 = "";
-let tx5 = "";
-let tx6 = "";
-let ss = "0";
-let ln = "";
-while (true) {
-    ln = file.read(1);
-    if ((ln !== "#")) {
-        tx1 = (tx1 + ln);
-        continue;
-    } else {
-        ss = "1";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((ss === "1") && (ln !== "#"))) {
-        tx2 = (tx2 + ln);
-        continue;
-    } else {
-        ss = "2";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((ss === "2") && (ln !== "#"))) {
-        tx3 = (tx3 + ln);
-        continue;
-    } else {
-        ss = "3";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((ss === "3") && (ln !== "#"))) {
-        tx4 = (tx4 + ln);
-        continue;
-    } else {
-        ss = "4";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((ss === "4") && (ln !== "#"))) {
-        tx5 = (tx5 + ln);
-        continue;
-    } else {
-        ss = "5";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((ss === "5") && (ln !== "#"))) {
-        tx6 = (tx6 + ln);
-        continue;
-    } else {
-        ss = "6";
-        break;
-    }
-}
-const txA = file2.read();
-const txB = file3.read();
-file.close();
+//file = open("text.txt", "r");
+file2 = open("textA.txt", "r");
+file3 = open("textB.txt", "r");
+file4 = open("text1.txt","r");
+file5 = open("text2.txt","r");
+file6 = open("text3.txt","r");
+file7 = open("text4.txt","r");
+file8 = open("text5.txt","r");
+file9 = open("text6.txt","r");
+let tx1 = file4.read();
+let tx2 = file5.read();
+let tx3 = file6.read();
+let tx4 = file7.read();
+let tx5 = file8.read();
+let tx6 = file9.read();
+
+txA = file2.read();
+txB = file3.read();
+//file.close();
 file2.close();
 file3.close();
+file4.close();
+file5.close();
+file6.close();
+file7.close();
+file8.close();
+file9.close();
 
 // Run 'Before Experiment' code from code_6
 //let rd = 0;
@@ -2923,6 +2874,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
