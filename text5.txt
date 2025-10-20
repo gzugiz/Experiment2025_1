@@ -1,3 +1,0 @@
-A következõkben a képernyõn felvillanó négyzetet fogsz látni, a képernyõ közepéhez képest idõnként feljebb, idõnként lejjebb. A feljebb felvillanó négyzetek esetén nyomd le a szóköz (space) billentyût a lehetõ leggyorsabban, viszont a lejjebb felvillanók esetén nem szabad semmilyen billentyût megnyomnod.
-
-A kezdéshez nyomj meg egy tetszõleges billentyût!
