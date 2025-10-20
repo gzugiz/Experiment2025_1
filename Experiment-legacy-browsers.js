@@ -12,7 +12,7 @@ let expInfo = {
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
 const n = 32;
-const t = 0.5;
+//const t = 0.5;
 const file = open("text.txt", "r");
 const file2 = open("textA.txt", "r");
 const file3 = open("textB.txt", "r");
@@ -2923,6 +2923,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
