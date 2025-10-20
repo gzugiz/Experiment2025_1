@@ -24,12 +24,12 @@ const t = 0.5;
 const file = open("text.txt", "r");
 const file2 = open("textA.txt", "r");
 const file3 = open("textB.txt", "r");
-const tx1;
-const tx2;
-const tx3;
-const tx4;
-const tx5;
-const tx6;
+let tx1;
+let tx2;
+let tx3;
+let tx4;
+let tx5;
+let tx6;
 let s = "0";
 let ln;
 while (true) {
@@ -2910,5 +2910,6 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
