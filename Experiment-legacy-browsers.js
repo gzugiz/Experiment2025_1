@@ -25,7 +25,7 @@ let tx6 = "";
 let ss = "0";
 let ln = "";
 while (true) {
-    ln = file.read(1);
+    ln = file.readFILE(1);
     if ((ln !== "#")) {
         tx1 = (tx1 + ln);
         continue;
@@ -36,7 +36,7 @@ while (true) {
     }
 }
 while (true) {
-    ln = file.read(1);
+    ln = file.readFILE(1);
     if (((ss === "1") && (ln !== "#"))) {
         tx2 = (tx2 + ln);
         continue;
@@ -47,7 +47,7 @@ while (true) {
     }
 }
 while (true) {
-    ln = file.read(1);
+    ln = file.readFILE(1);
     if (((ss === "2") && (ln !== "#"))) {
         tx3 = (tx3 + ln);
         continue;
@@ -58,7 +58,7 @@ while (true) {
     }
 }
 while (true) {
-    ln = file.read(1);
+    ln = file.readFILE(1);
     if (((ss === "3") && (ln !== "#"))) {
         tx4 = (tx4 + ln);
         continue;
@@ -69,7 +69,7 @@ while (true) {
     }
 }
 while (true) {
-    ln = file.read(1);
+    ln = file.readFILE(1);
     if (((ss === "4") && (ln !== "#"))) {
         tx5 = (tx5 + ln);
         continue;
@@ -80,7 +80,7 @@ while (true) {
     }
 }
 while (true) {
-    ln = file.read(1);
+    ln = file.readFILE(1);
     if (((ss === "5") && (ln !== "#"))) {
         tx6 = (tx6 + ln);
         continue;
@@ -3228,6 +3228,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
