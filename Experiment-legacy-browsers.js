@@ -90,8 +90,8 @@ while (true) {
         break;
     }
 }
-let txA = file2.read();
-let txB = file3.read();
+let txA = file2.readFILE();
+let txB = file3.readFILE();
 
 file2.close();
 file3.close();
@@ -3228,6 +3228,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
