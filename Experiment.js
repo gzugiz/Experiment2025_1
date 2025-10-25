@@ -264,7 +264,7 @@ async function experimentInit() {
   gender = new visual.Slider({
     win: psychoJS.window, name: 'gender',
     startValue: undefined,
-    size: [0.209, 0.1], pos: [0, (- 0.055)], ori: 0.0, units: psychoJS.window.units,
+    size: [0.3, 0.1], pos: [0, (- 0.055)], ori: 0.0, units: psychoJS.window.units,
     labels: ["F\u00e9rfi", "N\u0151"], fontSize: 0.05, ticks: [1, 2],
     granularity: 0.0, style: ["RADIO", "LABELS_45", "TRIANGLE_MARKER"],
     color: new util.Color([(- 1.0), (- 1.0), 0.0902]), markerColor: new util.Color('Red'), lineColor: new util.Color([0.1294, 0.8666, 0.1294]), 
@@ -3145,6 +3145,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
