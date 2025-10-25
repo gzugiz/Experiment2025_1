@@ -12,86 +12,20 @@ let expInfo = {
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
 n = 32;
-t = 0.5;
-file = open("text.txt", "r");
-file2 = open("textA.txt", "r");
-file3 = open("textB.txt", "r");
-tx1 = "";
-tx2 = "";
-tx3 = "";
-tx4 = "";
-tx5 = "";
-tx6 = "";
-s = "0";
-while (true) {
-    ln = file.read(1);
-    if ((ln !== "#")) {
-        tx1 = (tx1 + ln);
-        continue;
-    } else {
-        s = "1";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((s === "1") && (ln !== "#"))) {
-        tx2 = (tx2 + ln);
-        continue;
-    } else {
-        s = "2";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((s === "2") && (ln !== "#"))) {
-        tx3 = (tx3 + ln);
-        continue;
-    } else {
-        s = "3";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((s === "3") && (ln !== "#"))) {
-        tx4 = (tx4 + ln);
-        continue;
-    } else {
-        s = "4";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((s === "4") && (ln !== "#"))) {
-        tx5 = (tx5 + ln);
-        continue;
-    } else {
-        s = "5";
-        break;
-    }
-}
-while (true) {
-    ln = file.read(1);
-    if (((s === "5") && (ln !== "#"))) {
-        tx6 = (tx6 + ln);
-        continue;
-    } else {
-        s = "6";
-        break;
-    }
-}
-txA = file2.read();
-txB = file3.read();
-file.close();
-file2.close();
-file3.close();
+
+let tx1 = "Nagyon nagy szeretettel köszöntünk kísérletünkben!\nA felmérés alapvetően 20 és 70 év közötti személyeknek szól, akik nem rendelkeznek semmilyen figyelemzavarra vonatkozó diagnózissal.\nFontos, hogy kipihenten kezdj neki a kísérletnek!\nA részvétel teljesen önkéntes és anonim. Amennyiben a fenti feltételek teljesülnek rád, és szívesen vennél részt felmérésünkben, a továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx2 = "A következőkben egy szöveget kell majd nagyon figyelmesen elolvasnod.\nKoncentrálj minden részletére!\nElolvasása után egy billentyű megnyomásával tudsz majd továbblépni.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx3 = "A következőkben különböző szavak, fogalmak fognak felvillanni a képernyőn nagyon rövid időtartammal. Ha az előző szövegben található vagy a szöveggel kapcsolatos szót, fogalmat észlelsz, nyomd meg a szóköz (space) billentyűt, törekedve a leggyorsabb válaszadásra!\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx4 = "A következőkben a képernyőn egyjegyű számok fognak felvillanni egymást követően, kérjük add össze az aktuális értéket a közvetlenül előtte megjelenővel!\nAz eredményt a billentyűzeted segítségével tudod majd begépelni a villogó kurzor által jelzett helyre, majd ezt követően kattints a Tovább gombra!\nFontos, hogy a lehető leggyorsabban válaszolj!\nElőször egy példa ábra szemlélteti a feladatot.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx5 = "A következőkben a képernyőn felvillanó négyzetet fogsz látni, a képernyő közepéhez képest időnként feljebb, időnként lejjebb. A feljebb felvillanó négyzetek esetén nyomd le a szóköz (space) billentyűt a lehető leggyorsabban, viszont a lejjebb felvillanók esetén nem szabad semmilyen billentyűt megnyomnod.\nA következőkben a feladatot egy ábra szemlélteti.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx6 = "A kísérlet véget ért.\nNagyon szépen köszönjük, hogy részt vettél benne!\n\nAz adatok mentése egy kis időt vesz igénybe.\nKérjük, ezt még várd meg türelemmel!";
+
+let txA = "Merj nagyot álmodni! Ha elég elszánt vagy, minden lehetséges! Szenvedéllyel minden kihívás játszi könnyedségű élménnyé válik. Minden emberben ott az erő: végtelen energiák lakoznak bennünk. Menni kell előre, a lobogó tűz visz sikerről sikerre. A legjobb vagy! Ezt soha ne feledd! A teremtés koronái lettünk. Tökéletes eredményekre születtünk!";
+let txB = "Minden ember életében eljön az a pont, amikor megtapasztalja az élet nehézségeit. Rájövünk, hogy porszemek vagyunk a mindenségben, és végső soron nem számíthatunk senkire. Ilyenkor elgondolkodunk, hogy merre haladunk. Létezik-e elérendő cél? Vajon nem illúzió-e bármi, ami felé megyünk? Mindig a jövőbe kapaszkodunk. De vajon érdemes-e? Elvégre halandók vagyunk, esendők. Az élet bármelyik pillanatban véget érhet. Elenyészünk, elmúlunk. Az idő elröppen, a homokóra lepereg. Az emberiség léptékével mérve rövid létünk során semmit nem érhetünk el.";
 
 // Run 'Before Experiment' code from code_6
-rd = 0;
-x = 0;
+//let rd = 0;
+//let x = 0;
 
 // init psychoJS:
 const psychoJS = new PsychoJS({
@@ -3221,3 +3155,4 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
