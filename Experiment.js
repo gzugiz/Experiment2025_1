@@ -19,87 +19,93 @@ let expInfo = {
 
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
-n = 32;
-t = 0.5;
-file = open("text.txt", "r");
-file2 = open("textA.txt", "r");
-file3 = open("textB.txt", "r");
-tx1 = "";
-tx2 = "";
-tx3 = "";
-tx4 = "";
-tx5 = "";
-tx6 = "";
-s = "0";
+let n = 32;
+//let t = 0.5;
+let file = open("text.txt", "r");
+let file2 = open("textA.txt", "r");
+let file3 = open("textB.txt", "r");
+let tx1 = "";
+let tx2 = "";
+let tx3 = "";
+let tx4 = "";
+let tx5 = "";
+let tx6 = "";
+let ss = "0";
 while (true) {
     ln = file.read(1);
     if ((ln !== "#")) {
         tx1 = (tx1 + ln);
         continue;
     } else {
-        s = "1";
+        ss = "1";
+        file.close();
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "1") && (ln !== "#"))) {
+    if (((ss === "1") && (ln !== "#"))) {
         tx2 = (tx2 + ln);
         continue;
     } else {
-        s = "2";
+        ss = "2";
+        file.close();
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "2") && (ln !== "#"))) {
+    if (((ss === "2") && (ln !== "#"))) {
         tx3 = (tx3 + ln);
         continue;
     } else {
-        s = "3";
+        ss = "3";
+        file.close();
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "3") && (ln !== "#"))) {
+    if (((ss === "3") && (ln !== "#"))) {
         tx4 = (tx4 + ln);
         continue;
     } else {
-        s = "4";
+        ss = "4";
+        file.close();
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "4") && (ln !== "#"))) {
+    if (((ss === "4") && (ln !== "#"))) {
         tx5 = (tx5 + ln);
         continue;
     } else {
-        s = "5";
+        ss = "5";
+        file.close();
         break;
     }
 }
 while (true) {
     ln = file.read(1);
-    if (((s === "5") && (ln !== "#"))) {
+    if (((ss === "5") && (ln !== "#"))) {
         tx6 = (tx6 + ln);
         continue;
     } else {
-        s = "6";
+        ss = "6";
+        file.close();
         break;
     }
 }
-txA = file2.read();
-txB = file3.read();
-file.close();
+let txA = file2.read();
+let txB = file3.read();
+
 file2.close();
 file3.close();
 
 // Run 'Before Experiment' code from code_6
-rd = 0;
-x = 0;
+//let rd = 0;
+//let x = 0;
 
 // init psychoJS:
 const psychoJS = new PsychoJS({
@@ -3206,3 +3212,4 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
