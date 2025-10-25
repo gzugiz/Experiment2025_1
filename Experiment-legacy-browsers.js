@@ -12,89 +12,16 @@ let expInfo = {
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
 let n = 32;
-//let t = 0.5;
-let file = open("text.txt", "r");
-let file2 = open("textA.txt", "r");
-let file3 = open("textB.txt", "r");
-let tx1 = "";
-let tx2 = "";
-let tx3 = "";
-let tx4 = "";
-let tx5 = "";
-let tx6 = "";
-let ss = "0";
-let ln = "";
-while (true) {
-    ln = file.readFILE(1);
-    if ((ln !== "#")) {
-        tx1 = (tx1 + ln);
-        continue;
-    } else {
-        ss = "1";
-        file.close();
-        break;
-    }
-}
-while (true) {
-    ln = file.readFILE(1);
-    if (((ss === "1") && (ln !== "#"))) {
-        tx2 = (tx2 + ln);
-        continue;
-    } else {
-        ss = "2";
-        file.close();
-        break;
-    }
-}
-while (true) {
-    ln = file.readFILE(1);
-    if (((ss === "2") && (ln !== "#"))) {
-        tx3 = (tx3 + ln);
-        continue;
-    } else {
-        ss = "3";
-        file.close();
-        break;
-    }
-}
-while (true) {
-    ln = file.readFILE(1);
-    if (((ss === "3") && (ln !== "#"))) {
-        tx4 = (tx4 + ln);
-        continue;
-    } else {
-        ss = "4";
-        file.close();
-        break;
-    }
-}
-while (true) {
-    ln = file.readFILE(1);
-    if (((ss === "4") && (ln !== "#"))) {
-        tx5 = (tx5 + ln);
-        continue;
-    } else {
-        ss = "5";
-        file.close();
-        break;
-    }
-}
-while (true) {
-    ln = file.readFILE(1);
-    if (((ss === "5") && (ln !== "#"))) {
-        tx6 = (tx6 + ln);
-        continue;
-    } else {
-        ss = "6";
-        file.close();
-        break;
-    }
-}
-let txA = file2.readFILE();
-let txB = file3.readFILE();
 
-file2.close();
-file3.close();
+let tx1 = "Nagyon nagy szeretettel köszöntünk kísérletünkben!\nA felmérés alapvetően 20 és 70 év közötti személyeknek szól, akik nem rendelkeznek semmilyen figyelemzavarra vonatkozó diagnózissal.\nFontos, hogy kipihenten kezdj neki a kísérletnek!\nA részvétel teljesen önkéntes és anonim. Amennyiben a fenti feltételek teljesülnek rád, és szívesen vennél részt felmérésünkben, a továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx2 = "A következőkben egy szöveget kell majd nagyon figyelmesen elolvasnod.\nKoncentrálj minden részletére!\nElolvasása után egy billentyű megnyomásával tudsz majd továbblépni.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx3 = "A következőkben különböző szavak, fogalmak fognak felvillanni a képernyőn nagyon rövid időtartammal. Ha az előző szövegben található vagy a szöveggel kapcsolatos szót, fogalmat észlelsz, nyomd meg a szóköz (space) billentyűt, törekedve a leggyorsabb válaszadásra!\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx4 = "A következőkben a képernyőn egyjegyű számok fognak felvillanni egymást követően, kérjük add össze az aktuális értéket a közvetlenül előtte megjelenővel!\nAz eredményt a billentyűzeted segítségével tudod majd begépelni a villogó kurzor által jelzett helyre, majd ezt követően kattints a Tovább gombra!\nFontos, hogy a lehető leggyorsabban válaszolj!\nElőször egy példa ábra szemlélteti a feladatot.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx5 = "A következőkben a képernyőn felvillanó négyzetet fogsz látni, a képernyő közepéhez képest időnként feljebb, időnként lejjebb. A feljebb felvillanó négyzetek esetén nyomd le a szóköz (space) billentyűt a lehető leggyorsabban, viszont a lejjebb felvillanók esetén nem szabad semmilyen billentyűt megnyomnod.\nA következőkben a feladatot egy ábra szemlélteti.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
+let tx6 = "A kísérlet véget ért.\nNagyon szépen köszönjük, hogy részt vettél benne!\n\nAz adatok mentése egy kis időt vesz igénybe.\nKérjük, ezt még várd meg türelemmel!";
+
+let txA = "Merj nagyot álmodni! Ha elég elszánt vagy, minden lehetséges! Szenvedéllyel minden kihívás játszi könnyedségű élménnyé válik. Minden emberben ott az erő: végtelen energiák lakoznak bennünk. Menni kell előre, a lobogó tűz visz sikerről sikerre. A legjobb vagy! Ezt soha ne feledd! A teremtés koronái lettünk. Tökéletes eredményekre születtünk!";
+let txB = "Minden ember életében eljön az a pont, amikor megtapasztalja az élet nehézségeit. Rájövünk, hogy porszemek vagyunk a mindenségben, és végső soron nem számíthatunk senkire. Ilyenkor elgondolkodunk, hogy merre haladunk. Létezik-e elérendő cél? Vajon nem illúzió-e bármi, ami felé megyünk? Mindig a jövőbe kapaszkodunk. De vajon érdemes-e? Elvégre halandók vagyunk, esendők. Az élet bármelyik pillanatban véget érhet. Elenyészünk, elmúlunk. Az idő elröppen, a homokóra lepereg. Az emberiség léptékével mérve rövid létünk során semmit nem érhetünk el.";
 
 // Run 'Before Experiment' code from code_6
 // let rd = 0;
@@ -3228,6 +3155,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
