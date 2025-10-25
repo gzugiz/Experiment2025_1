@@ -1,5 +1,0 @@
-﻿A következőkben a képernyőn egyjegyű számok fognak felvillanni egymást követően, kérjük add össze az aktuális értéket a közvetlenül előtte megjelenővel!
-Az eredményt a billentyűzeted segítségével tudod majd begépelni a villogó kurzor által jelzett helyre, majd ezt követően kattints a Tovább gombra!
-Fontos, hogy a lehető leggyorsabban válaszolj!
-
-A kezdéshez nyomj meg egy tetszőleges billentyűt!
