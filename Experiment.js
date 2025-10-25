@@ -31,6 +31,7 @@ let tx4 = "";
 let tx5 = "";
 let tx6 = "";
 let ss = "0";
+let ln = "";
 while (true) {
     ln = file.read(1);
     if ((ln !== "#")) {
@@ -3212,4 +3213,5 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
