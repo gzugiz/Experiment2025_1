@@ -3008,8 +3008,8 @@ function TOVA_Block2RoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(TOVAresp_2.corr, level);
     }
-    psychoJS.experiment.addData('TOVAresp_2.keys', TOVAresp_2.keys);
     psychoJS.experiment.addData('jovalasz', k); // 1 is correct answer -1 is wrong
+    psychoJS.experiment.addData('TOVAresp_2.keys', TOVAresp_2.keys);
     if (typeof TOVAresp_2.keys !== 'undefined') {  // we had a response
         psychoJS.experiment.addData('TOVAresp_2.rt', TOVAresp_2.rt);
         }
@@ -3145,6 +3145,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
