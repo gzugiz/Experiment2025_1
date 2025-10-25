@@ -11,8 +11,8 @@ let expInfo = {
 
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
-n = 32;
-t = 0.5;
+let n = 32;
+//let t = 0.5;
 file = open("text.txt", "r");
 file2 = open("textA.txt", "r");
 file3 = open("textB.txt", "r");
@@ -3221,3 +3221,4 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
