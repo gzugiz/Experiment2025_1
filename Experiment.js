@@ -19,7 +19,7 @@ let expInfo = {
 
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
-let n = 32;
+const n = 32;
 
 let tx1 = "Nagyon nagy szeretettel köszöntünk kísérletünkben!\nA felmérés alapvetően 20 és 70 év közötti személyeknek szól, akik nem rendelkeznek semmilyen figyelemzavarra vonatkozó diagnózissal.\nFontos, hogy kipihenten kezdj neki a kísérletnek!\nA részvétel teljesen önkéntes és anonim. Amennyiben a fenti feltételek teljesülnek rád, és szívesen vennél részt felmérésünkben, a továbblépéshez nyomj meg egy tetszőleges billentyűt!";
 let tx2 = "A következőkben egy szöveget kell majd nagyon figyelmesen elolvasnod.\nKoncentrálj minden részletére!\nElolvasása után egy billentyű megnyomásával tudsz majd továbblépni.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
@@ -2855,6 +2855,7 @@ function TOVA_Block1RoutineEnd(snapshot) {
     psychoJS.experiment.addData('TOVAresp_1.keys', TOVAresp_1.keys);
     if (typeof TOVAresp_1.keys !== 'undefined') {  // we had a response
         psychoJS.experiment.addData('TOVAresp_1.rt', TOVAresp_1.rt);
+        psychoJS.experiment.addData('jovalasz', h); // 1 is correct answer -1 is wrong
         }
     
     TOVAresp_1.stop();
@@ -3143,6 +3144,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
