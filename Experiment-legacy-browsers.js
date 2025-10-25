@@ -2576,9 +2576,9 @@ function InstructionTOVARoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_4.corr, level);
     }
-    psychoJS.experiment.addData('key_resp_4.keys', key_resp_4.keys);
+    //psychoJS.experiment.addData('key_resp_4.keys', key_resp_4.keys);
     if (typeof key_resp_4.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_4.rt', key_resp_4.rt);
+        //psychoJS.experiment.addData('key_resp_4.rt', key_resp_4.rt);
         routineTimer.reset();
         }
     
@@ -2704,9 +2704,9 @@ function TaskPres2RoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_7.corr, level);
     }
-    psychoJS.experiment.addData('key_resp_7.keys', key_resp_7.keys);
+    //psychoJS.experiment.addData('key_resp_7.keys', key_resp_7.keys);
     if (typeof key_resp_7.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_7.rt', key_resp_7.rt);
+        //psychoJS.experiment.addData('key_resp_7.rt', key_resp_7.rt);
         routineTimer.reset();
         }
     
@@ -2865,9 +2865,9 @@ function TOVA_Block1RoutineEnd(snapshot) {
       currentLoop.addResponse(TOVAresp_1.corr, level);
     }
     psychoJS.experiment.addData('TOVAresp_1.keys', TOVAresp_1.keys);
+    psychoJS.experiment.addData('jovalasz', h); // 1 is correct answer -1 is wrong
     if (typeof TOVAresp_1.keys !== 'undefined') {  // we had a response
         psychoJS.experiment.addData('TOVAresp_1.rt', TOVAresp_1.rt);
-        psychoJS.experiment.addData('jovalasz', h); // 1 is correct answer -1 is wrong
         }
     
     TOVAresp_1.stop();
@@ -3022,9 +3022,9 @@ function TOVA_Block2RoutineEnd(snapshot) {
       currentLoop.addResponse(TOVAresp_2.corr, level);
     }
     psychoJS.experiment.addData('TOVAresp_2.keys', TOVAresp_2.keys);
+    psychoJS.experiment.addData('jovalasz', k); // 1 is correct answer -1 is wrong
     if (typeof TOVAresp_2.keys !== 'undefined') {  // we had a response
         psychoJS.experiment.addData('TOVAresp_2.rt', TOVAresp_2.rt);
-        psychoJS.experiment.addData('jovalasz', k); // 1 is correct answer -1 is wrong
         }
     
     TOVAresp_2.stop();
@@ -3159,6 +3159,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
