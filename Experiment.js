@@ -790,9 +790,9 @@ function InstructionGlobalRoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp.corr, level);
     }
-    psychoJS.experiment.addData('key_resp.keys', key_resp.keys);
+    //psychoJS.experiment.addData('key_resp.keys', key_resp.keys);
     if (typeof key_resp.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp.rt', key_resp.rt);
+        //psychoJS.experiment.addData('key_resp.rt', key_resp.rt);
         routineTimer.reset();
         }
     
@@ -1021,9 +1021,9 @@ function InstructionTextRoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_2.corr, level);
     }
-    psychoJS.experiment.addData('key_resp_2.keys', key_resp_2.keys);
+    //psychoJS.experiment.addData('key_resp_2.keys', key_resp_2.keys);
     if (typeof key_resp_2.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_2.rt', key_resp_2.rt);
+        //psychoJS.experiment.addData('key_resp_2.rt', key_resp_2.rt);
         routineTimer.reset();
         }
     
@@ -1168,9 +1168,9 @@ function TEXTRoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(TextResp.corr, level);
     }
-    psychoJS.experiment.addData('TextResp.keys', TextResp.keys);
+    //psychoJS.experiment.addData('TextResp.keys', TextResp.keys);
     if (typeof TextResp.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('TextResp.rt', TextResp.rt);
+        //psychoJS.experiment.addData('TextResp.rt', TextResp.rt);
         routineTimer.reset();
         }
     
@@ -1295,9 +1295,9 @@ function InstructionRoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_5.corr, level);
     }
-    psychoJS.experiment.addData('key_resp_5.keys', key_resp_5.keys);
+    //psychoJS.experiment.addData('key_resp_5.keys', key_resp_5.keys);
     if (typeof key_resp_5.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_5.rt', key_resp_5.rt);
+        //psychoJS.experiment.addData('key_resp_5.rt', key_resp_5.rt);
         routineTimer.reset();
         }
     
@@ -1874,9 +1874,9 @@ function InstructionPASATRoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_3.corr, level);
     }
-    psychoJS.experiment.addData('key_resp_3.keys', key_resp_3.keys);
+    //psychoJS.experiment.addData('key_resp_3.keys', key_resp_3.keys);
     if (typeof key_resp_3.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_3.rt', key_resp_3.rt);
+        //psychoJS.experiment.addData('key_resp_3.rt', key_resp_3.rt);
         routineTimer.reset();
         }
     
@@ -2001,9 +2001,9 @@ function TaskPres1RoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(key_resp_6.corr, level);
     }
-    psychoJS.experiment.addData('key_resp_6.keys', key_resp_6.keys);
+    //psychoJS.experiment.addData('key_resp_6.keys', key_resp_6.keys);
     if (typeof key_resp_6.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('key_resp_6.rt', key_resp_6.rt);
+        //psychoJS.experiment.addData('key_resp_6.rt', key_resp_6.rt);
         routineTimer.reset();
         }
     
@@ -3145,6 +3145,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
