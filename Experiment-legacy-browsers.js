@@ -11,7 +11,7 @@ let expInfo = {
 
 // Start code blocks for 'Before Experiment'
 // Run 'Before Experiment' code from init
-n = 32;
+let n = 32;
 
 let tx1 = "Nagyon nagy szeretettel köszöntünk kísérletünkben!\nA felmérés alapvetően 20 és 70 év közötti személyeknek szól, akik nem rendelkeznek semmilyen figyelemzavarra vonatkozó diagnózissal.\nFontos, hogy kipihenten kezdj neki a kísérletnek!\nA részvétel teljesen önkéntes és anonim. Amennyiben a fenti feltételek teljesülnek rád, és szívesen vennél részt felmérésünkben, a továbblépéshez nyomj meg egy tetszőleges billentyűt!";
 let tx2 = "A következőkben egy szöveget kell majd nagyon figyelmesen elolvasnod.\nKoncentrálj minden részletére!\nElolvasása után egy billentyű megnyomásával tudsz majd továbblépni.\n\nA továbblépéshez nyomj meg egy tetszőleges billentyűt!";
@@ -3155,4 +3155,5 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
