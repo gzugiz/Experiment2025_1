@@ -2444,6 +2444,7 @@ function PASATRoutineEnd(snapshot) {
     psychoJS.experiment.addData('button.numClicks', button.numClicks);
     psychoJS.experiment.addData('button.timesOn', button.timesOn);
     psychoJS.experiment.addData('button.timesOff', button.timesOff);
+    psychoJS.experiment.addData('eredm', a);
     // the Routine "PASAT" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -3141,5 +3142,6 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
