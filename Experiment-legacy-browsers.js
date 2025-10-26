@@ -1323,7 +1323,7 @@ function trials_4LoopBegin(trials_4LoopScheduler, snapshot) {
     trials_4 = new TrialHandler({
       psychoJS: psychoJS,
       nReps: 2, method: TrialHandler.Method.RANDOM,
-      //extraInfo: expInfo, originPath: undefined,
+      extraInfo: expInfo, originPath: undefined,
       trialList: TrialHandler.importConditions(psychoJS.serverManager, 'Impulses.xlsx', x),
       seed: undefined, name: 'trials_4'
     });
@@ -3162,6 +3162,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
