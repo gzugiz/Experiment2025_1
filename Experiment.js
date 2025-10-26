@@ -479,7 +479,7 @@ async function experimentInit() {
     fillColor: [0.1294, 0.8667, 0.1294],
     borderColor: null,
     //color: [0.2941, (- 0.6706), (- 0.6706)],
-    color: [-1.0, - 1.0, - 1.0],
+    color: [(-1.0), (- 1.0), (- 1.0)],
     colorSpace: 'rgb',
     pos: [0, (- 0.3)],
     letterHeight: 0.05,
@@ -3146,6 +3146,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
