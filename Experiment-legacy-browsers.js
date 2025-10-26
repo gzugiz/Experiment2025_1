@@ -133,7 +133,7 @@ var currentLoop;
 var frameDur;
 async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
-  //expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
+  expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   //expInfo['expName'] = expName;
   //expInfo['psychopyVersion'] = '2023.1.0';
   //expInfo['OS'] = window.navigator.platform;
@@ -3162,6 +3162,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
