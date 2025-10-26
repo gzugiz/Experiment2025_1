@@ -133,18 +133,18 @@ var currentLoop;
 var frameDur;
 async function updateInfo() {
   currentLoop = psychoJS.experiment;  // right now there are no loops
-  expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
-  expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '2023.1.0';
-  expInfo['OS'] = window.navigator.platform;
+  //expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
+  //expInfo['expName'] = expName;
+  //expInfo['psychopyVersion'] = '2023.1.0';
+  //expInfo['OS'] = window.navigator.platform;
 
 
   // store frame rate of monitor if we can measure it successfully
-  expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
+  /*expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
   if (typeof expInfo['frameRate'] !== 'undefined')
     frameDur = 1.0 / Math.round(expInfo['frameRate']);
   else
-    frameDur = 1.0 / 60.0; // couldn't get a reliable measure so guess
+    frameDur = 1.0 / 60.0; // couldn't get a reliable measure so guess*/
 
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
@@ -3162,6 +3162,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
