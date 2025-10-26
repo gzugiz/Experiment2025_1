@@ -1330,13 +1330,13 @@ function trials_4LoopBegin(trials_4LoopScheduler, snapshot) {
     
     // Schedule all the trials in the trialList:
     trials_4.forEach(function() {
-      snapshot = trials_4.getSnapshot();
+      //snapshot = trials_4.getSnapshot();
     
-      trials_4LoopScheduler.add(importConditions(snapshot));
-      trials_4LoopScheduler.add(WordImpulsesRoutineBegin(snapshot));
-      trials_4LoopScheduler.add(WordImpulsesRoutineEachFrame());
-      trials_4LoopScheduler.add(WordImpulsesRoutineEnd(snapshot));
-      trials_4LoopScheduler.add(trials_4LoopEndIteration(trials_4LoopScheduler, snapshot));
+      //trials_4LoopScheduler.add(importConditions(snapshot));
+      //trials_4LoopScheduler.add(WordImpulsesRoutineBegin(snapshot));
+      //trials_4LoopScheduler.add(WordImpulsesRoutineEachFrame());
+      //trials_4LoopScheduler.add(WordImpulsesRoutineEnd(snapshot));
+      //trials_4LoopScheduler.add(trials_4LoopEndIteration(trials_4LoopScheduler, snapshot));
     });
     
     return Scheduler.Event.NEXT;
@@ -3160,6 +3160,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
