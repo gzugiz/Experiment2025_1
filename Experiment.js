@@ -1432,11 +1432,11 @@ function trialsLoopEndIteration(scheduler, snapshot) {
       if (snapshot.finished) {
         // Check for and save orphaned data
         if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
+          //psychoJS.experiment.nextEntry(snapshot);
         }
         scheduler.stop();
       } else {
-        psychoJS.experiment.nextEntry(snapshot);
+        //psychoJS.experiment.nextEntry(snapshot);
       }
     return Scheduler.Event.NEXT;
     }
@@ -1495,11 +1495,11 @@ function trials_2LoopEndIteration(scheduler, snapshot) {
       if (snapshot.finished) {
         // Check for and save orphaned data
         if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
+          //psychoJS.experiment.nextEntry(snapshot);
         }
         scheduler.stop();
       } else {
-        psychoJS.experiment.nextEntry(snapshot);
+        //psychoJS.experiment.nextEntry(snapshot);
       }
     return Scheduler.Event.NEXT;
     }
@@ -1558,11 +1558,11 @@ function trials_3LoopEndIteration(scheduler, snapshot) {
       if (snapshot.finished) {
         // Check for and save orphaned data
         if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
+          //psychoJS.experiment.nextEntry(snapshot);
         }
         scheduler.stop();
       } else {
-        psychoJS.experiment.nextEntry(snapshot);
+        //psychoJS.experiment.nextEntry(snapshot);
       }
     return Scheduler.Event.NEXT;
     }
@@ -3146,6 +3146,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
