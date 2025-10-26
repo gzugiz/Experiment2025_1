@@ -1315,7 +1315,7 @@ function InstructionRoutineEnd(snapshot) {
 var trials_4;
 function trials_4LoopBegin(trials_4LoopScheduler, snapshot) {
   return async function() {
-    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    //TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
     
     // set up handler to look after randomisation of conditions etc
     trials_4 = new TrialHandler({
@@ -1330,13 +1330,12 @@ function trials_4LoopBegin(trials_4LoopScheduler, snapshot) {
     
     // Schedule all the trials in the trialList:
     trials_4.forEach(function() {
-      //snapshot = trials_4.getSnapshot();
-    
-      //trials_4LoopScheduler.add(importConditions(snapshot));
-      //trials_4LoopScheduler.add(WordImpulsesRoutineBegin(snapshot));
-      //trials_4LoopScheduler.add(WordImpulsesRoutineEachFrame());
-      //trials_4LoopScheduler.add(WordImpulsesRoutineEnd(snapshot));
-      //trials_4LoopScheduler.add(trials_4LoopEndIteration(trials_4LoopScheduler, snapshot));
+      snapshot = trials_4.getSnapshot();
+      trials_4LoopScheduler.add(importConditions(snapshot));
+      trials_4LoopScheduler.add(WordImpulsesRoutineBegin(snapshot));
+      trials_4LoopScheduler.add(WordImpulsesRoutineEachFrame());
+      trials_4LoopScheduler.add(WordImpulsesRoutineEnd(snapshot));
+      trials_4LoopScheduler.add(trials_4LoopEndIteration(trials_4LoopScheduler, snapshot));
     });
     
     return Scheduler.Event.NEXT;
@@ -2368,7 +2367,7 @@ function PASATRoutineEachFrame() {
     }
     
     // *textbox* updates
-    if (t >= 0.9 && textbox.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1.0 && textbox.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       textbox.tStart = t;  // (not accounting for frame time here)
       textbox.frameNStart = frameN;  // exact frame index
@@ -3160,6 +3159,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
