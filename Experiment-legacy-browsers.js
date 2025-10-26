@@ -2368,7 +2368,7 @@ function PASATRoutineEachFrame() {
     }
     
     // *textbox* updates
-    if (t >= 0.0 && textbox.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0.9 && textbox.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       textbox.tStart = t;  // (not accounting for frame time here)
       textbox.frameNStart = frameN;  // exact frame index
@@ -3160,6 +3160,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
