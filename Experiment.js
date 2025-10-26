@@ -1318,7 +1318,7 @@ function InstructionRoutineEnd(snapshot) {
 var trials_4;
 function trials_4LoopBegin(trials_4LoopScheduler, snapshot) {
   return async function() {
-    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    //TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
     
     // set up handler to look after randomisation of conditions etc
     trials_4 = new TrialHandler({
@@ -3146,6 +3146,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
