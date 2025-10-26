@@ -1063,7 +1063,8 @@ function TEXTRoutineBegin(snapshot) {
             x = util.range(11, 22);
         }
     }
-    
+
+    psychoJS.experiment.addData('actualtext', act);
     mainText.setText(actual);
     TextResp.keys = undefined;
     TextResp.rt = undefined;
@@ -3160,6 +3161,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
