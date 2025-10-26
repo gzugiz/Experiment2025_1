@@ -1315,7 +1315,7 @@ function InstructionRoutineEnd(snapshot) {
 var trials_4;
 function trials_4LoopBegin(trials_4LoopScheduler, snapshot) {
   return async function() {
-    //TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
+    TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
     
     // set up handler to look after randomisation of conditions etc
     trials_4 = new TrialHandler({
@@ -1363,11 +1363,11 @@ function trials_4LoopEndIteration(scheduler, snapshot) {
       if (snapshot.finished) {
         // Check for and save orphaned data
         if (psychoJS.experiment.isEntryEmpty()) {
-          psychoJS.experiment.nextEntry(snapshot);
+          //psychoJS.experiment.nextEntry(snapshot);
         }
         scheduler.stop();
       } else {
-        psychoJS.experiment.nextEntry(snapshot);
+        //psychoJS.experiment.nextEntry(snapshot);
       }
     return Scheduler.Event.NEXT;
     }
@@ -3159,6 +3159,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
