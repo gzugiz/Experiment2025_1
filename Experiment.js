@@ -268,7 +268,7 @@ async function experimentInit() {
     labels: ["F\u00e9rfi", "N\u0151"], fontSize: 0.05, ticks: [1, 2],
     granularity: 0.0, style: ["RADIO", "LABELS_45", "TRIANGLE_MARKER"],
     color: new util.Color([(- 1.0), (- 1.0), 0.0902]), markerColor: new util.Color('Red'), lineColor: new util.Color([0.1294, 0.8666, 0.1294]), 
-    opacity: 0.5, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
+    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
     flip: true,
   });
   
@@ -3148,6 +3148,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
