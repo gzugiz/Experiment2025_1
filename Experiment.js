@@ -477,7 +477,7 @@ async function experimentInit() {
     name: 'button',
     text: 'Tovább',
     fillColor: [0.1294, 0.8667, 0.1294],
-    borderColor: null,
+    borderColor: 'red',
     color: [0.2941, (- 0.6706), (- 0.6706)],
     colorSpace: 'rgb',
     pos: [0, (- 0.3)],
@@ -3146,6 +3146,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
