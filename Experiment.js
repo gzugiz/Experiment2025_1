@@ -1432,11 +1432,11 @@ function trialsLoopEndIteration(scheduler, snapshot) {
       if (snapshot.finished) {
         // Check for and save orphaned data
         if (psychoJS.experiment.isEntryEmpty()) {
-          //psychoJS.experiment.nextEntry(snapshot);
+          psychoJS.experiment.nextEntry(snapshot);
         }
         scheduler.stop();
       } else {
-        //psychoJS.experiment.nextEntry(snapshot);
+        psychoJS.experiment.nextEntry(snapshot);
       }
     return Scheduler.Event.NEXT;
     }
@@ -1495,11 +1495,11 @@ function trials_2LoopEndIteration(scheduler, snapshot) {
       if (snapshot.finished) {
         // Check for and save orphaned data
         if (psychoJS.experiment.isEntryEmpty()) {
-          //psychoJS.experiment.nextEntry(snapshot);
+          psychoJS.experiment.nextEntry(snapshot);
         }
         scheduler.stop();
       } else {
-        //psychoJS.experiment.nextEntry(snapshot);
+        psychoJS.experiment.nextEntry(snapshot);
       }
     return Scheduler.Event.NEXT;
     }
@@ -1558,11 +1558,11 @@ function trials_3LoopEndIteration(scheduler, snapshot) {
       if (snapshot.finished) {
         // Check for and save orphaned data
         if (psychoJS.experiment.isEntryEmpty()) {
-          //psychoJS.experiment.nextEntry(snapshot);
+          psychoJS.experiment.nextEntry(snapshot);
         }
         scheduler.stop();
       } else {
-        //psychoJS.experiment.nextEntry(snapshot);
+        psychoJS.experiment.nextEntry(snapshot);
       }
     return Scheduler.Event.NEXT;
     }
@@ -2853,10 +2853,10 @@ function TOVA_Block1RoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(TOVAresp_1.corr, level);
     }
-    psychoJS.experiment.addData('jovalasz', h); // 1 is correct answer -1 is wrong
-    psychoJS.experiment.addData('TOVAresp_1.keys', TOVAresp_1.keys);
+    psychoJS.experiment.addData('jovalasz', h, row=None, priority=20); // 1 is correct answer -1 is wrong
+    psychoJS.experiment.addData('TOVAresp_1.keys', TOVAresp_1.keys, row=None, priority=20);
     if (typeof TOVAresp_1.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('TOVAresp_1.rt', TOVAresp_1.rt);
+        psychoJS.experiment.addData('TOVAresp_1.rt', TOVAresp_1.rt, row=None, priority=20);
         }
     
     TOVAresp_1.stop();
@@ -3009,10 +3009,10 @@ function TOVA_Block2RoutineEnd(snapshot) {
     if (currentLoop instanceof MultiStairHandler) {
       currentLoop.addResponse(TOVAresp_2.corr, level);
     }
-    psychoJS.experiment.addData('jovalasz', k); // 1 is correct answer -1 is wrong
-    psychoJS.experiment.addData('TOVAresp_2.keys', TOVAresp_2.keys);
+    psychoJS.experiment.addData('jovalasz', k, row=None, priority=20); // 1 is correct answer -1 is wrong
+    psychoJS.experiment.addData('TOVAresp_2.keys', TOVAresp_2.keys, row=None, priority=20);
     if (typeof TOVAresp_2.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('TOVAresp_2.rt', TOVAresp_2.rt);
+        psychoJS.experiment.addData('TOVAresp_2.rt', TOVAresp_2.rt, row=None, priority=20);
         }
     
     TOVAresp_2.stop();
@@ -3146,6 +3146,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
