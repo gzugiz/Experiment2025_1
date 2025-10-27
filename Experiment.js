@@ -1058,12 +1058,12 @@ function TEXTRoutineBegin(snapshot) {
     rd = util.randint(1, 3);
     if ((rd === 1)) {
         actual = txA;
-        act = "pozit\u00edv";
+        act = "poz";
         x = util.range(0, 11);
     } else {
         if ((rd === 2)) {
             actual = txB;
-            act = "negat\u00edv";
+            act = "neg";
             x = util.range(11, 22);
         }
     }
@@ -3146,6 +3146,7 @@ async function quitPsychoJS(message, isCompleted) {
   
   return Scheduler.Event.QUIT;
 }
+
 
 
 
